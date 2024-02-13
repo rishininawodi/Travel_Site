@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Feedback</title>
+	<style type="text/css">	
+
+      body{font-family: Arial;}
+        .container {
+           border-radius: 5px;
+           background-color: lightblue;
+           padding: 20px;
+        }
+        .feed{
+           font-size: 25px;color: #2e8b57;
+        }
+        input[type=submit] {
+           background-color: #4caf50;
+           color: white;
+           padding: 12px 20px;
+           border: none;
+           cursor: pointer;
+        }
+        input[type=text], select, textarea {
+           width: 100%;
+           padding: 12px;
+           border: 1px solid #ccc;
+           box-sizing: border-box;
+           margin-top: 6px;
+           margin-bottom: 16px;
+        }
+        footer{
+	       position: fixed;
+	       bottom: 0;
+	       right: 0;
+	       background-color: #474e5d;
+	       /*opacity: 0.8;*/
+	       width: 100%;
+	       text-align: center;
+	       padding:0px 0px;
+        }
+        footer p{
+	       color: brown;
+	       font-weight: bold;
+        }
+	</style>
+</head>
+<body>
+
+	<div class="container">
+
+    <form action="/action_page.php">
+    <fieldset style="border: 2px solid #b0b0b0;">
+    <legend class="feed">Feedback</legend>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your name..">
+
+    <label for="Email">Email</label>
+    <input type="text" id="Email" name="Email" placeholder="Your Email...">
+
+    <label for="Hotel">Hotel</label>
+    <select id="Hotels" name="Hotels">
+    	<option value="wellawaya">wellawaya</option>
+    	<option value="yala">yala</option>
+    	<option value="Katharagama">Katharagama</option>
+</select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write comments.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+    </fieldset>
+  </form>
+  <footer>
+          <p>Design by ICTS/94&copy;2022 All Right Deserved</p>
+  </footer>
+</body>
+</html>
